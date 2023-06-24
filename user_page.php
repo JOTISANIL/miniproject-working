@@ -1,3 +1,16 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if(!isset($_SESSION['user_name'])){
+   header('location:login_form.php');
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +21,8 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<h1>welcome <span><?php echo $_SESSION['user_name'] ?></span></h1>
+      <p>this is an user page</p>
     <div class="background-photo" >
         <img src="assets/election-women-kudumbashree copy.png " >
         </div>
@@ -35,8 +50,8 @@
        </a>
        
        </div>
-       <a href="register_form.php">
-        <button class="signinbutton">Register</button>
+       <a href="logout.php">
+        <button class="signinbutton">Logout</button>
        </a>
     </div>
    
