@@ -47,14 +47,33 @@ if(isset($_POST['submit'])){
    <title>register form</title>
 
    <!-- custom css file link  -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="style.css">
+
+   <style>
+      .homebtn {
+         position: fixed;
+         top: 10px;
+         left: 10px;
+         padding: 5px 10px;
+         background-color: #f5f5f5;
+         border: none;
+         color: #000;
+         text-decoration: none;
+         cursor: pointer;
+         z-index: 9999;
+      }
+   </style>
 
 </head>
 <body>
+
    
 <div class="form-container">
 
+<<a href="index.html" class="homebtn">HOME</a>
    <form action="" method="post">
+      
       <h3>register now</h3>
       <?php
       if(isset($error)){

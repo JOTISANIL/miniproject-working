@@ -23,12 +23,12 @@ if(isset($_POST['submit'])){
       if($row['user_type'] == 'admin'){
 
          $_SESSION['admin_name'] = $row['name'];
-         header('location:admin_page.php');
+         header('location:index_admin.html');
 
       }elseif($row['user_type'] == 'user'){
 
          $_SESSION['user_name'] = $row['name'];
-         header('location:user_page.php');
+         header('location:index_user.html');
 
       }
      
@@ -50,10 +50,26 @@ if(isset($_POST['submit'])){
    <!-- custom css file link  -->
    <link rel="stylesheet" href="style.css">
 
+   <style>
+      .homebtn {
+         position: fixed;
+         top: 10px;
+         left: 10px;
+         padding: 5px 10px;
+         background-color: #f5f5f5;
+         border: none;
+         color: #000;
+         text-decoration: none;
+         cursor: pointer;
+         z-index: 9999;
+      }
+   </style>
+
 </head>
 <body>
    
 <div class="form-container">
+<<a href="index.html" class="homebtn">HOME</a>
 
    <form action="" method="post">
       <h3>login now</h3>

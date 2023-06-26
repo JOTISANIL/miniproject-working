@@ -34,8 +34,6 @@ if(!isset($_SESSION['admin_name'])){
        <div class="header-buttons">
         <a href="/index.html">
         <button class="button">HOME</button>
-
-
        </a>
    
        <a href="/store.html"> 

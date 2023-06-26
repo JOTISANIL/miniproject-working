@@ -1,4 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 header .header{
   background-color: #fff;
   height: 45px;
@@ -122,4 +130,37 @@ box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   scale: 130%;
   mix-blend-mode: darken;
   opacity: 20%;
+}
+
+.back-video{
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (mmax-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+.homebtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

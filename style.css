@@ -68,7 +68,7 @@
    justify-content: center;
    padding:20px;
    padding-bottom: 60px;
-   background: #379683;
+   background: #ddd;
 }
 
 .form-container form{
@@ -110,7 +110,7 @@
 }
 
 .form-container form .form-btn:hover{
-   background: #7b7b7b;
+   background: #7DCFB6;
    color:#fff;
 }
 
@@ -132,4 +132,27 @@
    border-radius: 5px;
    font-size: 20px;
    padding:10px;
+}
+
+.form-container form .redirect{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    background: #379683;
+ }
+
+ .form-container .homebtn {
+   position: fixed;
+   top: 10px;
+   left: 10px;
+   padding: 5px 10px;
+   background-color: #f5f5f5;
+   border: none;
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+   z-index: 9999;
 }
