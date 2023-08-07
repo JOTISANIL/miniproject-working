@@ -18,15 +18,18 @@
 
 <body>
 
+<div class="hero">
 <nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-
+            <img src="./assets/kudumbashree-removebg-preview.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="../MINICONN/nishstore/store.php">STORE</a></li>
+                <li><a href="landlease1.php">LAND LEASE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="register_form.php">REGISTER</a></li>
+            </ul>
+        </nav>
+</div>
 
           
 
@@ -52,9 +55,9 @@
         $productImageUrl = $row['image_url'];
 
         echo '
-        <div class="shop-item">
+        <div class="shop-item -w">
                     <span class="shop-item-title">' . $productName . '</span>
-                    <img class="shop-item-image" src="' . $productImageUrl . '">
+                    <img class="shop-item-image" src="' . $productImageUrl . '" width=180px>
                     <div class="shop-item-details">
                     <span class="shop-item-price">Rs ' . $productPrice . '</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
